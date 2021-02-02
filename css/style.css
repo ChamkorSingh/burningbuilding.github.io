@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: no-repeat url("https://images.unsplash.com/photo-1503217195339-397eb18024e1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-size: 100%;
+}
+
+header {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    opacity: 0.8;
+    background: gray;
+    padding: 2px;
+    
+}
+
+.title, .subtitle {
+    position: relative;
+    color: black;
+    z-index: 1;
+}
+
+.title {
+    font-size: 45px;
+}
+
+.subtitle {
+    font-size: 25px;
+}
+
+#game-progress {
+    position: absolute;
+    /* margin: 0 auto; */
+    /* width: 60%; */
+    top: 0;left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px 40px 0 0;
+}
+
+progress {
+    -webkit-appearance: none;
+}
+
+::-webkit-progress-inner-element {
+    z-index: -1;
+    border-radius: 40px 40px 0 0;
+    
+}
+
+::-webkit-progress-bar {
+    background-color: rgb(87, 0, 0);
+    border-radius: 40px 40px 0 0;
+    border: solid 10px black;
+}
+
+::-webkit-progress-value {
+    background-color: red;
+    border-radius: 30px 30px 0 0;
+
+}
+
+.scene {
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    background: rgba(253, 135, 0, 0.671);
+    border: solid 10px rgb(187, 0, 0);
+    border-radius: 0 0 40px 40px;
+    padding: 20px;
+}
+
+img {
+    width: 50%;
+}
+
+button {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    background: red;
+    color: whitesmoke;
+    font-weight: 700;
+    margin: 15px;
+}
